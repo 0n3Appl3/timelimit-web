@@ -1,0 +1,22 @@
+select#games {
+    padding: 0.7rem 1.8rem 0.7rem 1.2rem;
+    border: none;
+    border-radius: 0;
+    background-color: #f9f9f9;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    cursor: pointer;
+    background: url("../assets/arrow-down.png") 95% / 5% no-repeat #eee;
+    transition: all 0.3s cubic-bezier(0.165, 0.84, 0.44, 1);
+}
+select#games > option {
+    padding: 0.5rem 0.8rem;
+    background-color: #f9f9f9;
+    background-image: none;
+}
+.container__menu {
+    display: flex;
+    justify-content: space-between;
+}

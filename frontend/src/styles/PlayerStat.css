@@ -1,0 +1,105 @@
+* {
+    box-sizing: border-box;
+}
+.container__heading {
+    background-color: rgba(40, 39, 61, 0.9);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.container__stat,
+.container__heading {
+    display: flex;
+    justify-content: space-evenly;
+}
+.container__stat {
+    background-color: rgba(47, 46, 72, 0.8);
+}
+.container__stat > div,
+.container__heading > div {
+    flex-basis: 100%;
+}
+.container__heading > div {
+    padding: 1.1rem 1.5rem;
+    font-size: 1rem;
+}
+.container__stat > div {
+    padding: 0.8rem 1.5rem;
+    font-size: 1.1rem;
+}
+.container__stat > div:first-child,
+.container__stat > div:nth-child(2),
+.container__heading > div:first-child,
+.container__heading > div:nth-child(2) {
+    text-align: left;
+}
+.container__stat > div:not(:first-child) {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.container__stat > div:first-child {
+    display: flex;
+    color: #282828;
+    align-items: center;
+}
+.container__stat > div:first-child,
+.container__heading > div:first-child {
+    flex: 0 0 10%;
+}
+.container__stat > div:first-child {
+    font-size: 1.2rem;
+}
+.container__stat > div:nth-child(2),
+.container__heading > div:nth-child(2) {
+    flex: 0 0 30%;
+    text-align: center;
+}
+.container__stat > div:nth-child(2) {
+    display: flex;
+    justify-content: normal;
+    padding: 0 1.5rem 0 0;
+}
+.container__stat > div:nth-child(2) > div {
+    padding-left: 1rem;
+}
+.rank__first {
+    background-color: #f0af36;
+}
+.rank__second {
+    background-color: #cfcfcf;
+}
+.rank__third {
+    background-color: #c3874e;
+}
+
+@media screen and (max-width: 1000px) {
+    .container__stat > div:nth-child(2),
+    .container__heading > div:nth-child(2) {
+        flex: 0 0 50%;
+    }
+}
+@media screen and (max-width: 800px) {
+    .container__heading > div {
+        padding: 1.1rem 1rem;
+        font-size: 0.7rem;
+        transform: rotate(90deg);
+    }
+    .container__stat > div {
+        padding: 0.5rem 1rem;
+        font-size: 0.7rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .container__stat > div:nth-child(2),
+    .container__heading > div:nth-child(2) {
+        flex: 0 0 55%;
+    }
+    .container__heading > div {
+        padding: 1.1rem 0.5rem;
+        font-size: 0.5rem;
+    }
+    .container__stat > div {
+        padding: 0.5rem 0.5rem;
+        font-size: 0.7rem;
+    }
+}

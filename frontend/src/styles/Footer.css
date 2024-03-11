@@ -1,0 +1,8 @@
+.container__footer {
+    padding: 1.5rem;
+    /* background-color: #eee; */
+    background-color: #1c1c24;
+    /* color: #323232; */
+    color: #c6c6c6;
+    text-align: center;
+}

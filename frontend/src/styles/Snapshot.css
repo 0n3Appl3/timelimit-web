@@ -1,0 +1,24 @@
+.container__snapshot {
+    display: flex;
+    text-align: left;
+    padding: 0.8rem;
+    align-items: center;
+    background-color: rgba(47, 46, 72, 0.8);
+}
+.container__snapshot > div {
+    padding-left: 0.8rem;
+    flex-basis: 100%;
+}
+.snapshot__item span {
+    font-size: 1rem;
+    margin: 0;
+}
+.snapshot__item span:first-child {
+    font-weight: bold;
+}
+
+@media screen and (max-width: 500px) {
+    .snapshot__item span {
+        font-size: 0.8rem;
+    }
+}

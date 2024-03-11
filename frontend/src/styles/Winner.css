@@ -1,0 +1,44 @@
+.container__winner {
+    display: flex;
+    text-align: left;
+    align-items: center;
+    gap: 2rem;
+    background-color: rgba(40, 39, 61, 0.9);
+}
+.winner__item {
+    padding-right: 1rem;
+}
+.winner__item > p:first-child {
+    font-size: 2rem;
+    font-weight: 600;
+}
+.winner__item > p:last-child {
+    font-size: 1.4rem;
+}
+
+@media screen and (max-width: 1000px) {
+    .winner__item > p:first-child {
+        font-size: 1.6rem;
+    }
+    .winner__item > p:last-child {
+        font-size: 1.2rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    .winner__item > p:first-child {
+        font-size: 1.3rem;
+    }
+    .winner__item > p:last-child {
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 500px) {
+    .container__winner {
+        display: block;
+        padding: 0.8rem;
+        text-align: center;
+    }
+    .winner__item {
+        padding: 0;
+    }
+}

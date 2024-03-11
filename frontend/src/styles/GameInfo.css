@@ -1,0 +1,20 @@
+.container__game-info-content {
+    padding: 1rem;
+    background-color: rgba(47, 46, 72, 0.8);
+}
+.container__game-info-content > p:first-child {
+    margin-bottom: 0rem;
+    font-size: 1rem;
+    text-transform: uppercase;
+}
+.container__game-info-content > p:last-child {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .container__game-info-content {
+        padding: 0.5rem 1rem;
+    }
+}
